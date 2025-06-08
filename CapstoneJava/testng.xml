@@ -1,0 +1,13 @@
+<suite name="SauceDemo Test Suite">
+	<parameter name="url" value="https://www.saucedemo.com/" />
+    <parameter name="validUsername" value="standard_user" />
+    <parameter name="validPassword" value="secret_sauce" />
+    <parameter name="invalidUsername" value="standard_Invaliduser" />
+    <parameter name="invalidPassword" value="secret_Invalidpwd" />
+
+    <test name="SauceDemo Login Tests">
+        <classes>
+            <class name="com.saucedemo.tests.LoginTest" />
+        </classes>
+    </test>
+</suite>

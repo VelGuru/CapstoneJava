@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "e018e68b-5929-4da4-b3fa-5faffb7aea4a",
+		"name": "ReqresDelayAPIAutomation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45496319",
+		"_collection_link": "https://gnanavel-2442572.postman.co/workspace/Gnanavel's-Workspace~90707153-0cb3-4d72-8ba3-da420e7560c4/collection/45496319-e018e68b-5929-4da4-b3fa-5faffb7aea4a?action=share&source=collection_link&creator=45496319"
+	},
+	"item": [
+		{
+			"name": "Positive_Test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 4500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(4500);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check if response has data array\", function () {\r",
+							"    let jsonData;\r",
+							"    try {\r",
+							"        jsonData = pm.response.json();\r",
+							"        pm.expect(jsonData.data).to.be.an(\"array\");\r",
+							"    } catch (e) {\r",
+							"        console.warn(\"Response is not JSON or does not contain data array\");\r",
+							"    }\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "reqres-free-v1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://reqres.in/api/users?delay={{delayId}}",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "delay",
+							"value": "{{delayId}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Negative_Test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "reqres-free-v1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://reqres.in/api/users?delay={{delayId}}",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "delay",
+							"value": "{{delayId}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

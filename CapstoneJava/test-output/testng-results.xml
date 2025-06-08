@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-08T21:04:52 IST" name="SauceDemo Test Suite" finished-at="2025-06-08T21:04:57 IST" duration-ms="5414">
+    <groups>
+    </groups>
+    <test started-at="2025-06-08T21:04:52 IST" name="SauceDemo Login Tests" finished-at="2025-06-08T21:04:57 IST" duration-ms="5414">
+      <class name="com.saucedemo.tests.LoginTest">
+        <test-method is-config="true" signature="setUpSuite(java.lang.String)[pri:0, instance:com.saucedemo.tests.LoginTest@353352b6]" started-at="2025-06-08T21:04:48 IST" name="setUpSuite" finished-at="2025-06-08T21:04:52 IST" duration-ms="3638" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.saucedemo.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.tests.LoginTest@353352b6]" started-at="2025-06-08T21:04:52 IST" name="setUp" finished-at="2025-06-08T21:04:53 IST" duration-ms="1723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomePageTitle()[pri:1, instance:com.saucedemo.tests.LoginTest@353352b6]" started-at="2025-06-08T21:04:53 IST" name="verifyHomePageTitle" finished-at="2025-06-08T21:04:53 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.tests.LoginTest@353352b6]" started-at="2025-06-08T21:04:53 IST" name="tearDown" finished-at="2025-06-08T21:04:54 IST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.tests.LoginTest@353352b6]" started-at="2025-06-08T21:04:54 IST" name="setUp" finished-at="2025-06-08T21:04:55 IST" duration-ms="1073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:2, instance:com.saucedemo.tests.LoginTest@353352b6]" started-at="2025-06-08T21:04:55 IST" name="loginWithValidCredentials" finished-at="2025-06-08T21:04:55 IST" duration-ms="485" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.tests.LoginTest@353352b6]" started-at="2025-06-08T21:04:55 IST" name="tearDown" finished-at="2025-06-08T21:04:55 IST" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.saucedemo.tests.LoginTest@353352b6]" started-at="2025-06-08T21:04:55 IST" name="setUp" finished-at="2025-06-08T21:04:56 IST" duration-ms="1157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:3, instance:com.saucedemo.tests.LoginTest@353352b6]" started-at="2025-06-08T21:04:56 IST" name="loginWithInvalidCredentials" finished-at="2025-06-08T21:04:57 IST" duration-ms="466" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_Invaliduser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_Invalidpwd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.tests.LoginTest@353352b6]" started-at="2025-06-08T21:04:57 IST" name="tearDown" finished-at="2025-06-08T21:04:57 IST" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.saucedemo.tests.LoginTest -->
+    </test> <!-- SauceDemo Login Tests -->
+  </suite> <!-- SauceDemo Test Suite -->
+</testng-results>
