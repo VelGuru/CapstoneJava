@@ -1,0 +1,19 @@
+
+
+<?xml-model href=""?>
+<suite name="Mobile Test Suite" parallel="false">
+	<listeners>
+		<listener class-name="com.sauce.utils.Listeners" />
+	</listeners>
+
+	<test thread-count="5" name="End to end Framework Test">
+		<classes>
+			<class name="com.sauce.tests.eCommerceTest" />
+		</classes>
+	</test> 
+	<test thread-count="5" name="Error Validations">
+		<classes>
+			<class name="com.sauce.tests.ValidationTest" />
+		</classes>
+	</test> 
+</suite>
